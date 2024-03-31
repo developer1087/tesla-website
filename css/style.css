@@ -2,18 +2,27 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-spacing: 2%;
+  letter-spacing: 1px;
+}
+
+body {
+  display: block;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding: 15px;
 
 }
 
 .logo img{
+  position: relative;
   width: 100px;
-  color: #fff;
-  padding: 15px;
+  top: 5px;
+  left: 15px
 }
 
 ul {
@@ -21,14 +30,24 @@ ul {
   list-style: none;
 }
 
+li {
+  padding-right: 20px;
+}
+
 a {
   text-decoration: none;
   color: #fff;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.container {
+  height: 100vh;
 }
 
 #background-video {
-  height: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -44,4 +63,83 @@ a {
 
 .circle {
   padding: 5px;
+  color: #fff;
+}
+
+.hero .content {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+}
+
+.hero .content h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+
+.hero .content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.hero .content button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.hero2 {
+  position: absolute;
+  background: url(../images/model-3-exterior-desktop-na.png) no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hero2 .content {
+  position: relative;
+  left: 50%;
+
+  padding: 20px;
+  margin: -50px 0 0 -50px;
+}
+
+.hero2 .content .head {
+  position: absolute;
+  top: 200px;
+  
+  color: #fff;
+}
+
+.hero2 .content .head h2 {
+  font-size: 48px;
+  font-weight: 300;
+}
+.hero2 .content .head h3 {
+  font-size: 28px;
+}
+
+.hero2 .content .buttons {
+  position: absolute;
+  top: 80vh;
+  left: -5%;
+  padding: 20px;
+  margin: -50px 0 0 -50px;
+}
+
+.hero2 .content .buttons button {
+  font-size: 16px;
+  padding: 10px 50px;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: none;
+  color: #333;
 }
