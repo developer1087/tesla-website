@@ -9,6 +9,7 @@
 
 body {
   display: block;
+
 }
 
 .navbar {
@@ -43,6 +44,9 @@ a {
 
 .container {
   height: 100vh;
+  width: 100vw;
+  overflow:hidden;
+  margin:0 auto !important;
 }
 
 #background-video {
@@ -96,26 +100,16 @@ a {
 .hero2 {
   position: absolute;
   background: url(../images/model-3-exterior-desktop-na.png) no-repeat center center/cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   text-align: center;
   align-items: center;
   justify-content: center;
-
 }
 
 .hero2 .content {
   position: relative;
-  left: 50%;
-
-  padding: 20px;
-  margin: -50px 0 0 -50px;
-}
-
-.hero2 .content .head {
-  position: absolute;
   top: 200px;
-  
   color: #fff;
 }
 
@@ -125,15 +119,9 @@ a {
 }
 .hero2 .content .head h3 {
   font-size: 28px;
+  left: 10px;
 }
 
-.hero2 .content .buttons {
-  position: absolute;
-  top: 80vh;
-  left: -5%;
-  padding: 20px;
-  margin: -50px 0 0 -50px;
-}
 
 .hero2 .content .buttons button {
   font-size: 16px;
